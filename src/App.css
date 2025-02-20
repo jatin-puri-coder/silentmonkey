@@ -1,0 +1,93 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #325cc6aa;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 15em;
+  padding-top: 1em;
+  padding-bottom: -1em;
+  will-change: filter;
+  transition: filter 300ms;
+  animation: logo-spin infinite linear;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #f572faaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.subtext {
+  color: #f572fa;
+  font-style: italic;
+  margin-top: -10px;
+  font-size: large;
+}
+
+/* .heading {
+  width: 120%;
+  margin-top: -150px;
+  margin-bottom: -250px;
+} */
+
+.heading {
+  margin-bottom: -48px;
+}
+.card {
+  padding: 2em;
+  font-style: italic;
+}
+
+.speed-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 200px;
+  height: 6px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(
+    to right,
+    #f572fa 0%,
+    #f572fa var(--progress),
+    #ddd var(--progress),
+    #ddd 100%
+  );
+  transition: background 0.3s ease-in-out;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust space between links */
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #f572fa; /* Pink color */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #d450d4; /* Darker pink on hover */
+}
