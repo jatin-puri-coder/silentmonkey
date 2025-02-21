@@ -5,16 +5,17 @@ function Footer() {
   return (
     <>
       <div className="footer">
+        <Link to="/">Home</Link>
+
+        <Link to="/privacy-policy">Privacy Policy</Link>
+        <a href="mailto:admin@silentmonkey.co.nz">Contact Me</a>
         <a
           href="https://jatin-puri.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          About Me
+          More about me
         </a>
-        <Link to="/privacy-policy">Privacy Policy</Link>
-        <Link to="/">Home</Link>
-        <a href="mailto:admin@silentmonkey.co.nz">Contact Me</a>
       </div>
     </>
   )
