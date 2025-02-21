@@ -3,6 +3,7 @@ import Privacy from './pages/Privacy'
 import Layout from './Layout'
 import Home from './pages/Home'
 import Footer from './pages/Footer'
+import Projects from './pages/Projects'
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="privacy-policy" element={<Privacy />} />
+          <Route path="questionary/privacy-policy" element={<Privacy />} />
+          <Route path="projects" element={<Projects />} />
         </Route>
       </Routes>
       <Footer />

@@ -91,3 +91,54 @@
 .footer a:hover {
   color: #d450d4; /* Darker pink on hover */
 }
+
+.questionary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  position: relative; /* Ensures stacking works properly */
+  z-index: 1;
+}
+.screenshot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  position: relative;
+  z-index: 2;
+  height: 300px; /* Ensures images stay in a defined area */
+}
+
+.screenshot {
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: absolute; /* Stacks them correctly */
+}
+
+/* Positioning for fanned-out effect */
+.screenshot-1 {
+  transform: rotate(-25deg) translateX(-30px);
+}
+
+.screenshot-2 {
+  transform: rotate(0deg);
+  z-index: 2;
+}
+
+.screenshot-3 {
+  transform: rotate(25deg) translateX(30px);
+}
+
+/* Hover Effect */
+.screenshot:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
