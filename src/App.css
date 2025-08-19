@@ -92,7 +92,7 @@
   color: #d450d4; /* Darker pink on hover */
 }
 
-.questionary {
+.project-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,9 +136,17 @@
   transform: rotate(25deg) translateX(30px);
 }
 
+.screenshot-4 {
+  transform: rotate(-50deg) translateX(-30px);
+}
+
+.screenshot-5 {
+  transform: rotate(50deg) translateX(30px);
+}
+
 /* Hover Effect */
 .screenshot:hover {
-  transform: scale(1.05);
+  transform: scale(1.25);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
   z-index: 3;
 }

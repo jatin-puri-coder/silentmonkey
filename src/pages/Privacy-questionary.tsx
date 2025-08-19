@@ -1,4 +1,4 @@
-function Privacy() {
+function PrivacyQuestionary() {
   return (
     <div>
       <h2>Privacy Policy (Questionary)</h2>
@@ -15,20 +15,20 @@ function Privacy() {
 
       <h3>2. Information We Collect</h3>
       <ul>
-        <li>
+        <p>
           <strong>Usage Data:</strong> We use Firebase Analytics to track app
           usage (e.g., session duration, feature interactions).
-        </li>
-        <li>
+        </p>
+        <p>
           <strong>Device Information:</strong> Such as OS version and app
           performance data to improve functionality.
-        </li>
+        </p>
       </ul>
 
       <h3>3. How We Use Your Information</h3>
       <ul>
-        <li>Improve user experience and app performance.</li>
-        <li>Analyze app usage trends through Firebase Analytics.</li>
+        <p>Improve user experience and app performance.</p>
+        <p>Analyze app usage trends through Firebase Analytics.</p>
       </ul>
 
       <h3>4. Third-Party Services</h3>
@@ -67,4 +67,4 @@ function Privacy() {
   )
 }
 
-export default Privacy
+export default PrivacyQuestionary
