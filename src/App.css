@@ -107,11 +107,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin: 4rem auto;
   position: relative;
   z-index: 2;
-  height: 300px; /* Ensures images stay in a defined area */
+  padding: 1rem;
+  height: 60vh;
+}
+
+.screenshot-container img {
+  /* max-width: 100%; */
+  max-height: 100%;
+  border-radius: 12px;
 }
 
 .screenshot {
@@ -149,4 +155,15 @@
   transform: scale(1.25);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
   z-index: 3;
+}
+
+@media (max-width: 768px) {
+  .screenshot-container {
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+
+  .screenshot-container img {
+    max-width: 40vw;
+  }
 }

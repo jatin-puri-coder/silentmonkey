@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 import screenshot1 from '../assets/Questionary1.jpg'
 import screenshot2 from '../assets/Questionary2.jpg'
@@ -11,6 +12,10 @@ import screenshot8 from '../assets/WordCrate5.jpg'
 import '../App.css'
 
 function Projects() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <div className="project-container">
