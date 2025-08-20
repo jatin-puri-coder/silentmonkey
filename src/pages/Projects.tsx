@@ -28,6 +28,9 @@ function Projects() {
           getting to know someone better or practicing English, Questionary
           makes every interaction more interesting and insightful.
         </p>
+        <p>
+          <i>-- Built with React Native and Firebase --</i>
+        </p>
         <h3>
           <a
             href="https://play.google.com/store/apps/details?id=com.jatinpuri.Questionary&pcampaignid=web_share"
@@ -79,6 +82,10 @@ function Projects() {
           and speed typers. Simple, clean design — play anytime, anywhere. No
           ads, no distractions. Can you fill your crate before time runs out?
           Download Word Crate today and put your word skills to the test!
+        </p>
+        <p>
+          {' '}
+          <i>-- Built with Flutter -- </i>
         </p>
         <div className="screenshot-container">
           <img
