@@ -87,6 +87,15 @@ function Projects() {
           {' '}
           <i>-- Built with Flutter -- </i>
         </p>
+        <h3>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.silentmonkey.wordcrate"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Available now on Play Store
+          </a>
+        </h3>
         <div className="screenshot-container">
           <img
             src={screenshot4}
