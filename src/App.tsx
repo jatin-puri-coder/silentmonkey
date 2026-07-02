@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Footer from './pages/Footer'
 import Projects from './pages/Projects'
 import PrivacyWordCrate from './pages/Privacy-wordcrate'
+import LabelsWordCrate from './pages/Labels-wordcrate'
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
           <Route
             path="wordcrate/privacy-policy"
             element={<PrivacyWordCrate />}
+          />
+          <Route
+            path="wordcrate/labels"
+            element={<LabelsWordCrate />}
           />
           <Route path="projects" element={<Projects />} />
         </Route>
