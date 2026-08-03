@@ -88,12 +88,21 @@ function Projects() {
           <i>-- Built with Flutter -- </i>
         </p>
         <h3>
+          Available now on{' '}
           <a
             href="https://play.google.com/store/apps/details?id=com.silentmonkey.wordcrate"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Available now on Play Store
+            Play Store
+          </a>{' '}
+          /{' '}
+          <a
+            href="https://apps.apple.com/us/app/word-crate/id6783220698"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apple Store
           </a>
         </h3>
         <div className="screenshot-container">
