@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import monkeyLogo from '../assets/silentmonkey.png'
-import { projects } from '../data/projects'
+import { projects, clientWork } from '../data/projects'
 
 import '../App.css'
 
@@ -63,6 +63,47 @@ function Home() {
             </article>
           ))}
         </div>
+      </section>
+
+      <section className="apps" aria-labelledby="client-heading">
+        <h2 id="client-heading">Client work</h2>
+        {clientWork.map((c) => (
+          <article className="client-card" key={c.slug}>
+            <a
+              href={c.link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="client-cover-link"
+            >
+              <img
+                src={c.cover.src}
+                alt={c.cover.alt}
+                className="client-cover"
+                width="960"
+                height="640"
+                loading="lazy"
+              />
+            </a>
+            <div className="app-body">
+              <h3>{c.name}</h3>
+              <p>{c.tagline}</p>
+              {c.description.map((d) => (
+                <p key={d}>{d}</p>
+              ))}
+              <p className="app-built">Built with {c.builtWith}</p>
+              <div className="app-links">
+                <a
+                  href={c.link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="app-store"
+                >
+                  {c.link.label}
+                </a>
+              </div>
+            </div>
+          </article>
+        ))}
       </section>
     </>
   )

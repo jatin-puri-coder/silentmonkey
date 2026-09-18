@@ -6,6 +6,7 @@ import wordcrate2 from '../assets/Wordcrate2.jpg'
 import wordcrate3 from '../assets/Wordcrate3.jpg'
 import wordcrate4 from '../assets/Wordcrate4.jpg'
 import wordcrate5 from '../assets/Wordcrate5.jpg'
+import getALawyer from '../assets/getalawyer.jpg'
 
 export type StoreLink = { label: string; href: string }
 
@@ -63,6 +64,33 @@ export const projects: Project[] = [
     description: [
       'Choose a topic such as Education, Environment, Sports or Dreams and receive a random, thought-provoking question to discuss or reflect on.',
       'Whether you are getting to know someone or practising English, Questionary makes the conversation more interesting.',
+    ],
+  },
+]
+
+export type ClientProject = {
+  slug: string
+  name: string
+  client: string
+  tagline: string
+  builtWith: string
+  cover: { src: string; alt: string }
+  link: { label: string; href: string }
+  description: string[]
+}
+
+export const clientWork: ClientProject[] = [
+  {
+    slug: 'getalawyer',
+    name: 'Get A Lawyer',
+    client: 'Get A Lawyer NZ',
+    tagline: 'An AI-assisted legal marketplace that matches New Zealanders with the right law firm.',
+    builtWith: 'Next.js, TypeScript, Tailwind CSS, Claude API and Resend, hosted on Vercel',
+    cover: { src: getALawyer, alt: 'Get A Lawyer NZ homepage on desktop and mobile' },
+    link: { label: 'Visit getalawyer.co.nz', href: 'https://www.getalawyer.co.nz/' },
+    description: [
+      'People describe their legal matter once and are connected with trusted firms who can help. Firms receive a summary by email and follow up directly.',
+      'Built from the first conversation with the client through to launch: requirements, design, the matching flow, firm onboarding, and email delivery.',
     ],
   },
 ]
