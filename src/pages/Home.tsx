@@ -105,6 +105,33 @@ function Home() {
           </article>
         ))}
       </section>
+
+      <section className="apps hire" aria-labelledby="hire-heading">
+        <h2 id="hire-heading">Work with me</h2>
+        <div className="hire-card">
+          <ul className="hire-list">
+            <li>
+              <strong>Websites and web apps.</strong> Marketing sites, portals
+              and tools, built with React and Next.js.
+            </li>
+            <li>
+              <strong>Mobile apps.</strong> iOS and Android, from idea to the
+              app stores, with Flutter or React Native.
+            </li>
+            <li>
+              <strong>Fixes and features.</strong> Improvements, integrations
+              and ongoing support for something you already have.
+            </li>
+          </ul>
+          <p className="hire-how">
+            Send a few lines about what you need. I'll come back with questions
+            and a rough scope, and we go from there.
+          </p>
+          <a href="mailto:admin@silentmonkey.co.nz" className="app-store">
+            Email admin@silentmonkey.co.nz
+          </a>
+        </div>
+      </section>
     </>
   )
 }

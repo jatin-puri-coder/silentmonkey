@@ -248,6 +248,37 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+.hire-card {
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hire-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+  text-align: left;
+}
+
+.hire-list li {
+  padding: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.hire-list li + li {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.hire-how {
+  margin: 0 0 1.25rem;
+  line-height: 1.5;
+}
+
 @media (max-width: 700px) {
   .client-card {
     grid-template-columns: 1fr;
