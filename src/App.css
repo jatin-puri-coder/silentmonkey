@@ -80,68 +80,47 @@
   position: relative; /* Ensures stacking works properly */
   z-index: 1;
 }
-.screenshot-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 4rem auto;
-  position: relative;
-  z-index: 2;
-  padding: 1rem;
-  height: 60vh;
+.project-tagline {
+  font-size: 1.15rem;
+  margin-top: -0.5rem;
 }
 
-.screenshot-container img {
-  /* max-width: 100%; */
-  max-height: 100%;
-  border-radius: 12px;
+.project-links {
+  justify-content: center;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.screenshot-row {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 1rem;
+  justify-content: flex-start;
+  overflow-x: auto;
+  max-width: 100%;
+  padding: 0.5rem 0.25rem 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
 .screenshot {
-  width: 220px;
+  flex: 0 0 auto;
+  width: 200px;
+  height: auto;
   border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: absolute; /* Stacks them correctly */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  scroll-snap-align: start;
 }
 
-/* Positioning for fanned-out effect */
-.screenshot-1 {
-  transform: rotate(-25deg) translateX(-30px);
-}
-
-.screenshot-2 {
-  transform: rotate(0deg);
-  z-index: 2;
-}
-
-.screenshot-3 {
-  transform: rotate(25deg) translateX(30px);
-}
-
-.screenshot-4 {
-  transform: rotate(-50deg) translateX(-30px);
-}
-
-.screenshot-5 {
-  transform: rotate(50deg) translateX(30px);
-}
-
-/* Hover Effect */
-.screenshot:hover {
-  transform: scale(1.25);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-  z-index: 3;
-}
-
-@media (max-width: 768px) {
-  .screenshot-container {
-    margin: 2rem auto;
-    padding: 0.5rem;
+@media (min-width: 1200px) {
+  .screenshot-row {
+    justify-content: center;
   }
+}
 
-  .screenshot-container img {
-    max-width: 40vw;
+@media (max-width: 480px) {
+  .screenshot {
+    width: 160px;
   }
 }
 
