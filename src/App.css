@@ -17,13 +17,16 @@
 .logo {
   height: 15em;
   padding-top: 1em;
-  padding-bottom: -1em;
-  will-change: filter;
   transition: filter 300ms;
-  animation: logo-spin 21s infinite linear;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #f572faaa);
+  animation: logo-spin 1.2s ease-in-out 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo:hover {
+    animation: none;
+  }
 }
 
 @keyframes logo-spin {
