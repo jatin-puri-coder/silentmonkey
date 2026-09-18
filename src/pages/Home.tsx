@@ -35,8 +35,8 @@ function Home() {
                 src={p.cover.src}
                 alt={p.cover.alt}
                 className="app-cover"
-                width="1080"
-                height="2400"
+                width="480"
+                height="1066"
                 loading="lazy"
               />
               <div className="app-body">

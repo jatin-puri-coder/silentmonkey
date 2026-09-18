@@ -47,8 +47,8 @@ function Projects() {
                 src={s.src}
                 alt={s.alt}
                 className="screenshot"
-                width="1080"
-                height="2400"
+                width="480"
+                height="1066"
                 loading="lazy"
               />
             ))}
