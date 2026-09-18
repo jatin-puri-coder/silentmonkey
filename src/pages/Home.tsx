@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom'
 import monkeyLogo from '../assets/silentmonkey.png'
+import { projects } from '../data/projects'
 
 import '../App.css'
 
@@ -23,6 +25,45 @@ function Home() {
           , full-stack developer in Canterbury, New Zealand.
         </p>
       </div>
+
+      <section className="apps" aria-labelledby="apps-heading">
+        <h2 id="apps-heading">Our apps</h2>
+        <div className="app-grid">
+          {projects.map((p) => (
+            <article className="app-card" key={p.slug}>
+              <img
+                src={p.cover.src}
+                alt={p.cover.alt}
+                className="app-cover"
+                width="1080"
+                height="2400"
+                loading="lazy"
+              />
+              <div className="app-body">
+                <h3>{p.name}</h3>
+                <p>{p.tagline}</p>
+                <p className="app-built">Built with {p.builtWith}</p>
+                <div className="app-links">
+                  {p.stores.map((s) => (
+                    <a
+                      key={s.href}
+                      href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="app-store"
+                    >
+                      {s.label}
+                    </a>
+                  ))}
+                  <Link to={`/projects#${p.slug}`} className="app-more">
+                    More about {p.name}
+                  </Link>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
     </>
   )
 }

@@ -13,12 +13,18 @@ import '../App.css'
 
 function Projects() {
   useEffect(() => {
-    window.scrollTo(0, 0)
+    const id = window.location.hash.split('#')[2]
+    const target = id ? document.getElementById(id) : null
+    if (target) {
+      target.scrollIntoView()
+    } else {
+      window.scrollTo(0, 0)
+    }
   }, [])
 
   return (
     <>
-      <div className="project-container">
+      <div className="project-container" id="questionary">
         <h2>Questionary</h2>
         <p>
           Questionary is a simple and engaging app designed to spark meaningful
@@ -61,7 +67,7 @@ function Projects() {
           <Link to="/questionary/privacy-policy">Privacy Policy</Link>
         </p>
       </div>
-      <div className="project-container">
+      <div className="project-container" id="wordcrate">
         <h2>Word Crate</h2>
         <p>
           Word Crate is a fast-paced daily word puzzle that challenges your

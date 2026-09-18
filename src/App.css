@@ -1,4 +1,5 @@
 #root {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -49,13 +50,15 @@
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* Adjust space between links */
+  gap: 12px 20px;
   margin-top: 20px;
   padding: 10px 0;
 }
 
 .footer a {
+  white-space: nowrap;
   text-decoration: none;
   color: #f572fa; /* Pink color */
   font-weight: bold;
@@ -139,5 +142,97 @@
 
   .screenshot-container img {
     max-width: 40vw;
+  }
+}
+
+/* Home page app cards */
+.apps {
+  max-width: 900px;
+  margin: 3rem auto 0;
+  text-align: left;
+}
+
+.apps h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.app-card {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  align-items: start;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.app-cover {
+  width: 130px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.app-body h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.35rem;
+}
+
+.app-body p {
+  margin: 0 0 0.5rem;
+  line-height: 1.5;
+}
+
+.app-built {
+  font-style: italic;
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+.app-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  margin-top: 0.75rem;
+  align-items: center;
+}
+
+.app-store {
+  display: inline-block;
+  padding: 0.45em 1em;
+  border-radius: 999px;
+  background: #f572fa;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.app-store:hover {
+  background: #de4ce8;
+  color: #1a1a1a;
+}
+
+.app-more {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .app-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .app-links {
+    justify-content: center;
   }
 }
