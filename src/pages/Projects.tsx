@@ -23,7 +23,7 @@ function Projects() {
         <p>
           Questionary is a simple and engaging app designed to spark meaningful
           conversations and improve language skills. Choose a topic - like
-          Education, Environment, Sports, Dreams - and receieve a random
+          Education, Environment, Sports, Dreams - and receive a random
           thought-provoking question to discuss or reflect on. Whether you're
           getting to know someone better or practicing English, Questionary
           makes every interaction more interesting and insightful.

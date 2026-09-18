@@ -9,11 +9,11 @@ function Footer() {
         <Link to="/projects">Projects</Link>
         <a href="mailto:admin@silentmonkey.co.nz">Contact Me</a>
         <a
-          href="https://jatin-puri.com"
+          href="https://www.jatin-puri.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          More about me
+          About the developer
         </a>
       </div>
     </>
