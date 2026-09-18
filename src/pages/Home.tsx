@@ -27,7 +27,7 @@ function Home() {
       </div>
 
       <section className="apps" aria-labelledby="apps-heading">
-        <h2 id="apps-heading">Our apps</h2>
+        <h2 id="apps-heading">Apps</h2>
         <div className="app-grid">
           {projects.map((p) => (
             <article className="app-card" key={p.slug}>

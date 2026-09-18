@@ -6,7 +6,7 @@ function Footer() {
     <>
       <div className="footer">
         <Link to="/">Home</Link>
-        <Link to="/projects">Projects</Link>
+        <Link to="/projects">Apps</Link>
         <a href="mailto:admin@silentmonkey.co.nz">Contact Me</a>
         <a
           href="https://www.jatin-puri.com"
