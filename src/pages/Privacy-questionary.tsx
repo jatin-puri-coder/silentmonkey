@@ -1,4 +1,7 @@
+import { useTitle } from '../useTitle'
+
 function PrivacyQuestionary() {
+  useTitle('Questionary Privacy Policy')
   return (
     <div>
       <h2>Privacy Policy (Questionary)</h2>

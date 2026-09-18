@@ -1,3 +1,4 @@
+import { useTitle } from '../useTitle'
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import { projects } from '../data/projects'
@@ -5,6 +6,7 @@ import { projects } from '../data/projects'
 import '../App.css'
 
 function Projects() {
+  useTitle('Apps')
   useEffect(() => {
     const id = window.location.hash.split('#')[2]
     const target = id ? document.getElementById(id) : null

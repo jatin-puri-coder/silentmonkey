@@ -1,4 +1,7 @@
+import { useTitle } from '../useTitle'
+
 function LabelsWordCrate() {
+  useTitle('Word Crate Labels & Markings')
   return (
     <div>
       <h2>Labels &amp; Markings (Word Crate)</h2>

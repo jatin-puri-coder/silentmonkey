@@ -1,4 +1,7 @@
+import { useTitle } from '../useTitle'
+
 function PrivacyWordCrate() {
+  useTitle('Word Crate Privacy Policy')
   return (
     <div>
       <h2>Privacy Policy (Word Crate)</h2>

@@ -1,3 +1,4 @@
+import { useTitle } from '../useTitle'
 import { Link } from 'react-router-dom'
 import monkeyLogo from '../assets/silentmonkey.png'
 import { projects, clientWork } from '../data/projects'
@@ -5,6 +6,7 @@ import { projects, clientWork } from '../data/projects'
 import '../App.css'
 
 function Home() {
+  useTitle()
   return (
     <>
       <div className="logo-container">
