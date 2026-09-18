@@ -20,7 +20,7 @@ function Home() {
           >
             Jatin Puri
           </a>
-          , full-stack developer in Christchurch, New Zealand.
+          , full-stack developer in Canterbury, New Zealand.
         </p>
       </div>
     </>
