@@ -111,8 +111,9 @@ function Home() {
         <div className="hire-card">
           <ul className="hire-list">
             <li>
-              <strong>Websites and web apps.</strong> Marketing sites, portals
-              and tools, built with React and Next.js.
+              <strong>Business websites and web apps.</strong> Sites that do
+              something: booking, matching, quotes, sign-ups, customer portals.
+              Built with React and Next.js.
             </li>
             <li>
               <strong>Mobile apps.</strong> iOS and Android, from idea to the
