@@ -7,6 +7,7 @@ import wordcrate3 from '../assets/Wordcrate3.jpg'
 import wordcrate4 from '../assets/Wordcrate4.jpg'
 import wordcrate5 from '../assets/Wordcrate5.jpg'
 import getALawyer from '../assets/getalawyer.jpg'
+import treeTogether from '../assets/treetogether.jpg'
 
 export type StoreLink = { label: string; href: string }
 
@@ -64,6 +65,31 @@ export const projects: Project[] = [
     description: [
       'Choose a topic such as Education, Environment, Sports or Dreams and receive a random, thought-provoking question to discuss or reflect on.',
       'Whether you are getting to know someone or practising English, Questionary makes the conversation more interesting.',
+    ],
+  },
+]
+
+export type WebProject = {
+  slug: string
+  name: string
+  tagline: string
+  builtWith: string
+  cover: { src: string; alt: string }
+  link: { label: string; href: string }
+  description: string[]
+}
+
+export const webApps: WebProject[] = [
+  {
+    slug: 'treetogether',
+    name: 'Tree Together',
+    tagline: 'A collaborative family tree that the whole family builds together.',
+    builtWith: 'Next.js, TypeScript, Tailwind CSS, React Flow and Firebase, hosted on Vercel',
+    cover: { src: treeTogether, alt: 'Tree Together homepage with the headline Build your family tree, together' },
+    link: { label: 'Visit tree-together.com', href: 'https://www.tree-together.com' },
+    description: [
+      'Create a tree, share its join code with parents, cousins and grandparents, and everyone adds the people, dates and stories they know.',
+      'Relatives are laid out on a drag-and-drop canvas with relationship lines drawn for you, and changes appear live for the whole family.',
     ],
   },
 ]

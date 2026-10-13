@@ -1,7 +1,7 @@
 import { useTitle } from '../useTitle'
 import { Link } from 'react-router-dom'
 import monkeyLogo from '../assets/silentmonkey.png'
-import { projects, clientWork } from '../data/projects'
+import { projects, webApps, clientWork } from '../data/projects'
 
 import '../App.css'
 
@@ -67,6 +67,50 @@ function Home() {
         </div>
       </section>
 
+      <section className="apps" aria-labelledby="web-heading">
+        <h2 id="web-heading">Web apps</h2>
+        {webApps.map((w) => (
+          <article className="client-card" key={w.slug}>
+            <a
+              href={w.link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="client-cover-link"
+            >
+              <img
+                src={w.cover.src}
+                alt={w.cover.alt}
+                className="client-cover"
+                width="960"
+                height="640"
+                loading="lazy"
+              />
+            </a>
+            <div className="app-body">
+              <h3>{w.name}</h3>
+              <p>{w.tagline}</p>
+              {w.description.map((d) => (
+                <p key={d}>{d}</p>
+              ))}
+              <p className="app-built">Built with {w.builtWith}</p>
+              <div className="app-links">
+                <a
+                  href={w.link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="app-store"
+                >
+                  {w.link.label}
+                </a>
+                <Link to={`/projects#${w.slug}`} className="app-more">
+                  More about {w.name}
+                </Link>
+              </div>
+            </div>
+          </article>
+        ))}
+      </section>
+
       <section className="apps" aria-labelledby="client-heading">
         <h2 id="client-heading">Client work</h2>
         {clientWork.map((c) => (
@@ -102,6 +146,9 @@ function Home() {
                 >
                   {c.link.label}
                 </a>
+                <Link to={`/projects#${c.slug}`} className="app-more">
+                  More about {c.name}
+                </Link>
               </div>
             </div>
           </article>
